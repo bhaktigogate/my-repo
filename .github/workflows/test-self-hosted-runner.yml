@@ -1,0 +1,8 @@
+name : Self hosted runner test workflow
+on: workflow_dispatch
+jobs:
+    test-job:
+        runs-on: gh-runner-ubuntu
+        steps:
+            - name: Test step
+              run: echo "Running workflow on self hosted runner."
